@@ -11,7 +11,7 @@ class Diff:
         process = Popen(["git", "diff", self._old_hash, self._new_hash], stdout=PIPE)
         stdout, stderr = process.communicate()
         if stderr:
-            raise IOError(
+            raise OSError(
                 f"`git diff {self._old_hash} {self._new_hash}` failed. "
                 f"Reason: {stderr.decode()}"
             )
