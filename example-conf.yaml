@@ -1,0 +1,22 @@
+user_map:
+  - src: dest
+  - nikromen: nikromen
+  - praiskup: praiskup
+
+issue:
+  - shorten: true
+  - assignees: false
+  - labels: true
+
+pr:
+  - shorten: true
+  - assignees: false
+  - labels: true
+  - make_pr_comments: true
+  - track_branches: true
+
+track_urls: true
+preserve_datetime: true
+match_id: true
+make_diffs: true
+path_to_store_diffs: /some/path
