@@ -107,7 +107,7 @@ class Transferator3000:
 
     def _prepare_branches_for_pulls(self, id_matcher: int) -> List[str]:
         start = 0
-        for (index, _) in self.sorted_source_prs:
+        for index, _ in self.sorted_source_prs:
             if index == id_matcher:
                 start = index
 

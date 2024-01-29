@@ -2,7 +2,6 @@
 File for longer messages or messages which often repeats.
 """
 
-
 # Long messages
 # TODO: provide link
 CONFIG_FILE_NOT_FOUND_DEFAULT_LOCATION = (
