@@ -139,5 +139,5 @@ class Config:
         return ConfigSchema.parse_obj(config_dict)
 
     def get_config(self) -> "ConfigSchema":
-        with open(self._get_config_file_path(), "r") as config_file:
+        with open(self._get_config_file_path()) as config_file:
             return self._parse_config_file(safe_load(config_file))
